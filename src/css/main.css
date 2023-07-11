@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --color-primary: transparent;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+@media (max-width: 800px) {
+  html {
+    font-size: 45%;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+.link-hidder {
+  text-decoration: none;
+}
+
+.fixed-element {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 2rem;
+  height: 2rem;
+  color: black;
+}
+
+.hero-component {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(0deg, #1a1537 0%, #1a1537 100%), #201f1f;
+  background: url("../assets/image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+}
+.hero-component .hero-left {
+  width: 60%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.91);
+}
+@media (max-width: 800px) {
+  .hero-component .hero-left {
+    width: 100%;
+  }
+}
+.hero-component .hero-left .left-header {
+  width: 100%;
+  height: 10%;
+}
+.hero-component .hero-left .left-content {
+  width: 100%;
+  height: 90%;
+}
+.hero-component .hero-left .left-content .left-content-inside {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.hero-component .hero-left .left-content .left-content-inside h1 {
+  color: #2b2b2b;
+  font-family: Poppins;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.hero-component .hero-left .left-content .left-content-inside p {
+  width: 60%;
+  margin: 2rem 0;
+  color: #2b2b2b;
+  font-family: Manrope;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.hero-component .hero-left .left-content .left-content-inside button {
+  margin: 2rem 0;
+  padding: 1.5rem 3rem;
+  border: 0px;
+  background: #000000;
+  color: #fff;
+  font-family: Manrope;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: 0.2s ease-in-out;
+}
+.hero-component .hero-left .left-content .left-content-inside button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.hero-component .hero-left .left-content .left-content-inside a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #2b2b2b;
+  font-family: Manrope;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: 0.2s ease-in-out;
+}
+.hero-component .hero-left .left-content .left-content-inside a:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.hero-component .hero-right {
+  width: 40%;
+  height: 100%;
+}
+@media (max-width: 800px) {
+  .hero-component .hero-right {
+    display: none;
+  }
+}
+.hero-component .hero-right .right-header {
+  width: 100%;
+  height: 15%;
+}
+.hero-component .hero-right .right-header .right-header-inside {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.hero-component .hero-right .right-header .right-header-inside ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-component .hero-right .right-header .right-header-inside ul li {
+  list-style: none;
+  color: #fff;
+  font-family: Manrope;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0 1.5rem;
+}
+.hero-component .hero-right .right-header .right-header-inside ul li button {
+  padding: 1.5rem 3rem;
+  border: 0px;
+  border-radius: 2.4375rem;
+  background: #fff;
+  color: #000;
+  font-family: Manrope;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: 0.2s ease-in-out;
+}
+.hero-component .hero-right .right-header .right-header-inside ul li button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.form-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111111;
+}
+.form-page .form-container {
+  width: 80%;
+  height: 80%;
+  background: #fff;
+  display: flex;
+}
+.form-page .form-container .form-left {
+  width: 70%;
+  height: 100%;
+}
+@media (max-width: 800px) {
+  .form-page .form-container .form-left {
+    width: 100%;
+  }
+}
+.form-page .form-container .form-left .form-left-inside {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.form-page .form-container .form-left .form-left-inside h1 {
+  color: #333;
+  font-family: Poppins;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.form-page .form-container .form-left .form-left-inside p {
+  color: #333;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.form-page .form-container .form-left .form-left-inside form {
+  width: 100%;
+  padding: 2rem 0;
+}
+.form-page .form-container .form-left .form-left-inside form .form-input {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0;
+}
+.form-page .form-container .form-left .form-left-inside form .form-input label {
+  color: #666;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.form-page .form-container .form-left .form-left-inside form .form-input input {
+  width: 80%;
+  padding: 0.8rem 0;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  padding: 1rem;
+  font-family: Poppins;
+  border: 1px solid rgba(102, 102, 102, 0.35);
+}
+.form-page .form-container .form-left .form-left-inside form .form-input input:focus {
+  outline: none;
+  border: 2px solid rgb(0, 0, 0);
+}
+.form-page .form-container .form-left .form-left-inside form .form-input textarea {
+  width: 80%;
+  padding: 0.8rem 0;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  padding: 1rem;
+  font-family: Poppins;
+  border: 1px solid rgba(102, 102, 102, 0.35);
+}
+.form-page .form-container .form-left .form-left-inside form .form-input textarea:focus {
+  outline: none;
+  border: 2px solid rgb(0, 0, 0);
+}
+.form-page .form-container .form-left .form-left-inside form button {
+  border: 0px;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  opacity: 0.25;
+  background: #111;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: 0.2s all;
+}
+.form-page .form-container .form-left .form-left-inside form button:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.form-page .form-container .form-right {
+  width: 30%;
+  height: 100%;
+  background: url("../assets/form.png");
+}
+@media (max-width: 800px) {
+  .form-page .form-container .form-right {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */

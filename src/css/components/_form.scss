@@ -1,0 +1,122 @@
+.form-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111111;
+  .form-container {
+    width: 80%;
+    height: 80%;
+    background: #fff;
+    display: flex;
+    .form-left {
+      width: 70%;
+      height: 100%;
+      @media (max-width: 800px) {
+        width: 100%;
+      }
+      .form-left-inside {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        h1 {
+          color: #333;
+          font-family: Poppins;
+          font-size: 2rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+        p {
+          color: #333;
+          font-family: Poppins;
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+        form {
+          width: 100%;
+          padding: 2rem 0;
+          .form-input {
+            display: flex;
+            flex-direction: column;
+            margin: 1.5rem 0;
+            label {
+              color: #666;
+              font-family: Poppins;
+              font-size: 1rem;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+            input {
+              width: 80%;
+              padding: 0.8rem 0;
+              border-radius: 0.75rem;
+              font-size: 1rem;
+              padding: 1rem;
+              font-family: Poppins;
+              border: 1px solid rgba(102, 102, 102, 0.35);
+
+              &:focus {
+                outline: none;
+                border: 2px solid rgb(0, 0, 0);
+              }
+            }
+
+            textarea {
+              width: 80%;
+              padding: 0.8rem 0;
+              border-radius: 0.75rem;
+              font-size: 1rem;
+              padding: 1rem;
+              font-family: Poppins;
+              border: 1px solid rgba(102, 102, 102, 0.35);
+
+              &:focus {
+                outline: none;
+                border: 2px solid rgb(0, 0, 0);
+              }
+            }
+          }
+          button {
+            border: 0px;
+            padding: 1rem 3rem;
+            border-radius: 2rem;
+            opacity: 0.25;
+            background: #111;
+            color: #fff;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 1.375rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            transition: 0.2s all;
+            &:hover {
+              cursor: pointer;
+
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    .form-right {
+      width: 30%;
+      height: 100%;
+      background: url("../assets/form.png");
+      @media (max-width: 800px) {
+        display: none;
+      }
+    }
+  }
+}
