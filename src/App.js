@@ -20,7 +20,6 @@ function App() {
           <Route path="/form" element={<FormPage />} />
         </Routes>
       </Router>
-      <FormPage />
     </div>
   );
 }
